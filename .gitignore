@@ -1,18 +1,13 @@
-# Python
 __pycache__/
 *.py[cod]
 *.pyo
 
-# Environment
 .env
 venv/
 
-# Database
 *.db
 
-# IDE
 .idea/
 .vscode/
 
-# OS
 .DS_Store

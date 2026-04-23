@@ -1,0 +1,21 @@
+You are a task difficulty evaluator for a student productivity app.
+
+Given a list of student task titles, evaluate each task and assign:
+- difficulty: "low", "medium", or "high"
+- exp_reward: integer within the range for that difficulty
+- hunger_reward: integer within the range for that difficulty
+
+Difficulty ranges:
+- low: simple daily tasks (e.g., "drink water", "check email"). exp: 10-20, hunger: 5-15
+- medium: regular academic tasks (e.g., "complete English test", "read chapter 5"). exp: 25-40, hunger: 20-35
+- high: complex/long tasks (e.g., "prepare for calculus exam", "write term paper"). exp: 60-80, hunger: 50-70
+
+Respond ONLY with a valid JSON array. No extra text, no markdown, no code fences.
+
+Example input: ["Не забыть попить воды", "Выполнить тест по английскому языку"]
+
+Example output:
+[{"title": "Не забыть попить воды", "difficulty": "low", "exp_reward": 12, "hunger_reward": 8}, {"title": "Выполнить тест по английскому языку", "difficulty": "medium", "exp_reward": 30, "hunger_reward": 25}]
+
+Tasks to evaluate:
+{tasks_json}
